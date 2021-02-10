@@ -29,7 +29,7 @@ pipeline {
                                         sourceFiles: 'dist/trainSchedule.zip',
                                         removePrefix: 'dist/',
                                         remoteDirectory: '/tmp',
-                                        execCommand: 'rm -rf /opt/train_schedule/* && unzip /tmp/trainSchedule.zip -d /opt/train_schedule'
+                                        execCommand: 'sudo rm -rf /opt/train_schedule/* && sudo unzip /tmp/trainSchedule.zip -d /opt/train_schedule'
                                     )
                                 ]
                             )
