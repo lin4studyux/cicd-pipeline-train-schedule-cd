@@ -28,8 +28,7 @@ pipeline {
                                     sshTransfer(
                                         sourceFiles: 'dist/trainSchedule.zip',
                                         removePrefix: 'dist/',
-                                        remoteDirectory: '/tmp',
-                                        execCommand: 'sudo ls /tmp'
+                                        remoteDirectory: '/tmp'
                                     )
                                 ]
                             )
