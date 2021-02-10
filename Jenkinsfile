@@ -28,7 +28,8 @@ pipeline {
                                     sshTransfer(
                                         sourceFiles: 'dist/trainSchedule.zip',
                                         removePrefix: 'dist/',
-                                        remoteDirectory: '/tmp'
+                                        remoteDirectory: '/tmp',
+                                        execCommand: 'rm -rf /opt/train_schedule/* && unzip /tmp/trainSchedule.zip -d /opt/train_schedule'
                                     )
                                 ]
                             )
