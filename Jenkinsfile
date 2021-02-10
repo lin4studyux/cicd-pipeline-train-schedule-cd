@@ -29,7 +29,7 @@ pipeline {
                                         sourceFiles: 'dist/trainSchedule.zip',
                                         removePrefix: 'dist/',
                                         remoteDirectory: '/tmp',
-                                        execCommand: 'sudo touch test.txt'
+                                        execCommand: 'sudo touch testing.txt'
                                     )
                                 ]
                             )
